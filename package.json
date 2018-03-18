@@ -1,0 +1,13 @@
+{
+  "name": "typescript-udemy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Craig Pullar <craigmichaelpullar@gmail.com>",
+  "license": "MIT",
+  "scripts" : {
+    "start": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
