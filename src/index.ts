@@ -1,10 +1,4 @@
-//enum
-enum Color {
-    Gray, //0
-    Green = 100,
-    Blue //101
-}
+let any;
+any = 3;
 
-let myColor: Color = Color.Blue;
-
-console.log(myColor);
+any = 'hey';
