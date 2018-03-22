@@ -11,6 +11,18 @@
         Hello World
     </h1>
 
-    <script src="src/index.js"></script>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+        SystemJS.config({
+            baseURL: '/src',
+            packages: {
+                '/': {
+                    defaultExtensions: 'js',
+                }
+            }
+        });
+
+        SystemJS.import('index');
+    </script>
 </body>
 </html>

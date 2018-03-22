@@ -4,11 +4,14 @@
   "main": "index.js",
   "author": "Craig Pullar <craigmichaelpullar@gmail.com>",
   "license": "MIT",
-  "scripts" : {
+  "scripts": {
     "start": "lite-server",
     "compile": "tsc -p ./tsconfig.json"
   },
   "devDependencies": {
     "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "systemjs": "^0.21.0"
   }
 }
