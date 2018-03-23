@@ -7,14 +7,17 @@
     <title>Hello World</title>
 </head>
 <body>
-    <h1>
+    <h1 class="title">
         Hello World
     </h1>
 
     <script src="node_modules/systemjs/dist/system.js"></script>
     <script>
         SystemJS.config({
-            baseURL: '/src',
+            map: {
+                "jQuery": "node_modules/jquery/dist/jquery.min.js",
+            },
+            baseURL: '/',
             packages: {
                 '/': {
                     defaultExtensions: 'js',
@@ -22,7 +25,7 @@
             }
         });
 
-        SystemJS.import('index');
+        SystemJS.import('src/index');
     </script>
 </body>
 </html>
