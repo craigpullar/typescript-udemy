@@ -6,14 +6,23 @@
   "license": "MIT",
   "scripts": {
     "start": "lite-server",
-    "compile": "tsc -p ./tsconfig.json"
+    "compile": "tsc -p ./tsconfig.json",
+    "build:gulp": "gulp",
+    "build:webpack": "webpack-cli -d --watch",
+    "dist:webpack": "webpack-cli -p"
   },
   "devDependencies": {
     "@types/jquery": "^3.3.1",
-    "lite-server": "^2.3.0"
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^4.0.1",
+    "lite-server": "^2.3.0",
+    "ts-loader": "^4.1.0",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
   },
   "dependencies": {
     "jquery": "^3.3.1",
-    "systemjs": "^0.21.0"
+    "systemjs": "^0.21.0",
+    "typescript": "^2.7.2"
   }
 }

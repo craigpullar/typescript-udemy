@@ -11,21 +11,6 @@
         Hello World
     </h1>
 
-    <script src="node_modules/systemjs/dist/system.js"></script>
-    <script>
-        SystemJS.config({
-            map: {
-                "jQuery": "node_modules/jquery/dist/jquery.min.js",
-            },
-            baseURL: '/',
-            packages: {
-                '/': {
-                    defaultExtensions: 'js',
-                }
-            }
-        });
-
-        SystemJS.import('src/index');
-    </script>
+    <script src="dist/bundle.js"></script>
 </body>
 </html>
